@@ -10,6 +10,6 @@ function setThisWithCall (fn, thisValue, arg) {
 function setThisWithApply (fn, thisValue, arg) {
   return fn.apply( thisValue, arg);
 }
-returnNewFunctionOf (functionToBeCopied, thisValue){
+ function returnNewFunctionOf (functionToBeCopied, thisValue){
   return functionToBeCopied.bind(thisValue);
 }
